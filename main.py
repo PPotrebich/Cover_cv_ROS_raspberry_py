@@ -11,6 +11,7 @@ image_pub = rospy.Publisher('~pasha', Image)
 
 def image_callback(data):
     print(".")
+    print("'_|_'")
     image = bridge.imgmsg_to_cv2(data, 'bgr8')
     # Do any image processing with cv2...
     # image = cv.circle(image, (100, 100), 10, (0, 0, 255), -1)
