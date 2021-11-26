@@ -17,5 +17,5 @@ def image_callback(data):
     image_pub.publish(bridge.cv2_to_imgmsg(image, 'bgr8'))
 
 image_sub = rospy.Subscriber('main_camera/image_raw', Image, image_callback)
-oiuhjhjkhkjh
+
 rospy.spin()
